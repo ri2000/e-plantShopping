@@ -268,14 +268,6 @@ function ProductList({ onHomeClick }) {
     }
     return (
         <div>
-            <div style={{
-                backgroundColor: 'red',
-                color: 'white',
-                padding: '20px',
-                fontSize: '24px'
-            }}>
-                PRODUCT LIST IS RENDERING!
-            </div>
             <div className="navbar" style={styleObj}>
                 <div className="tag">
                     <div className="luxury">
