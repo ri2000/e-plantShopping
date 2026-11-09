@@ -3,12 +3,13 @@ import './ProductList.css'
 import CartItem from './CartItem';
 import { addItem, removeItem, updateQuantity } from './CartSlice.jsx';
 import cartReducer from './CartSlice.jsx';
-import { useDispatch, useSelector};
+import { useSelector, useDispatch } from 'react-redux';
 
 function ProductList({ onHomeClick }) {
     const [showCart, setShowCart] = useState(false);
     const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
     const [addedToCart, setAddedToCart] = useState({});
+    const dispatch = useDispatch();
 
     const plantsArray = [
         {
