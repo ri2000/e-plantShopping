@@ -37,7 +37,14 @@ function App() {
 
       </div>
       <div className={`product-list-container ${showProductList ? 'visible' : ''}`}>
-        <ProductList onHomeClick={handleHomeClick}/>
+        <div style={{
+          backgroundColor: 'red',
+          color: 'white',
+          padding: '50px',
+          fontSize: '30px'
+      }}>
+          TESTING PRODUCT PAGE
+      </div>
       </div>
     </div>
   );
