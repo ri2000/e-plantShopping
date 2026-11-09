@@ -30,16 +30,8 @@ function App() {
             <div className="aboutus_container"> <AboutUs/> </div> 
           </div> 
       </div> 
-      <div style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          backgroundColor: 'yellow',
-          zIndex: 9999
-      }}>
-          <h1>PRODUCT PAGE TEST</h1>
+      <div className={`product-list-container ${showProductList ? 'visible' : ''}`}> 
+        <ProductList onHomeClick={handleHomeClick}/> 
       </div>
     </div>
   );
