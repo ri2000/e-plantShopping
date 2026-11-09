@@ -3,6 +3,7 @@ import './ProductList.css'
 import CartItem from './CartItem';
 import { addItem, removeItem, updateQuantity } from './CartSlice.jsx';
 import cartReducer from './CartSlice.jsx';
+import { useDispatch, useSelector};
 
 function ProductList({ onHomeClick }) {
     const [showCart, setShowCart] = useState(false);
