@@ -295,7 +295,7 @@ function ProductList({ onHomeClick }) {
                                 <div className="plant-list">
                                     {category.plants.map((plant, index) => {
                                         (
-                                            <div className="plant_card" key={index}>
+                                            <div className="plant-card" key={index}>
                                                 <h3>{plant.name}</h3>
                                                 <img 
                                                     className="plant-image"
