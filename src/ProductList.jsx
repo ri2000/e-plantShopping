@@ -11,6 +11,7 @@ function ProductList({ onHomeClick }) {
     const [addedToCart, setAddedToCart] = useState({});
     const dispatch = useDispatch();
     const cart = useSelector(state => state.cart.items);
+    const itemsCount = cart.reduce((total, item) => total + item.quantity, 0);
 
     const plantsArray = [
         {
@@ -295,7 +296,7 @@ function ProductList({ onHomeClick }) {
                             </h1>
                           </a>
                             {cart.length > 0 && (
-                                <span className="cart-counter">{cart.length}</span>
+                                <span className="cart-counter">{itemsCount}</span>
                             )}
                     </div>
                 </div>
