@@ -9,7 +9,6 @@ function App() {
   const [showProductList, setShowProductList] = useState(false);
 
   const handleGetStartedClick = () => {
-    alert("GET STARTED BUTTON CLICKED!");
     setShowProductList(true);
   };
 
